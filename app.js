@@ -10,6 +10,7 @@ app.get('/', (req, res) => {
 
 app.get('/players', (req,res) => {
   request('https://api.sportradar.com/tennis-t2/en/players/sr:competitor:18378/profile.json?api_key=t59wap9bzndhdx5wnqm92uh7', (error, res, body) =>{
+
     if(!error && res.statusCode === 200) {
       console.log(body);
     }
