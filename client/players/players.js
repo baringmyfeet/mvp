@@ -8,6 +8,7 @@ angular.module('tennis.players', [])
       .then(function(players) {
         $scope.playersAry.push(players);
         $scope.data.players = $scope.playersAry;
+        $scope.players = null;
       })
       .catch(function(error) {
         console.error(error);

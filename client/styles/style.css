@@ -1,0 +1,11 @@
+.marginTop {
+	margin-top: 70px;
+}
+.navbar-default .navbar-brand {
+  font-size: 2em;
+  font-style: italic bold;
+}
+h1 {
+  font-style: italic;
+  margin-bottom: 10px;
+}
