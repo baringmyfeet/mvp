@@ -1,5 +1,4 @@
 
-console.log("in clinet app.js");
 angular.module('tennis', [
   'tennis.services',
   'tennis.players',
