@@ -11,9 +11,10 @@ angular.module('tennis.services', [])
     })
     .then(function (resp) {
       var name = resp.data.player.name, nationality = resp.data.player.nationality
-      dob = resp.data.player.date_of_birth, handedness = resp.data.player.handedness;
+      dob = resp.data.player.date_of_birth, handedness = resp.data.player.handedness
+      ranking = resp.data.rankings[0].rank;
       var resTxt = 'Name: ' + name + ', Nationality: ' + nationality
-      +', Date of Birth: '+dob+', Handedness: '+handedness;
+      +', Date of Birth: '+dob+', Handedness: '+handedness+', Ranking: '+ranking;
       return resTxt;
     });
   };

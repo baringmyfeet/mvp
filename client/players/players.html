@@ -1,11 +1,18 @@
 <div id='players'>
   <p> Enter player name in the input box!</p>
   <form name = 'playersForm' ng-submit='getPlayers()'>
-    <input type='text' name='player' ng-model='players.name'
+    <input type='text' id='input-player' ng-model='players.name'
     placeholder="Enter a player name here..." />
     <button type='submit' value='Get Player'> Submit</button>
-  </form>
+  </form> <br />
+  <input type='text' name='search' ng-model='search'
+  placeholder='Search a player...' />
   <div>
-    {{data.players}}
+    <ul>
+      <li ng-repeat="player in playersAry|filter:search">
+        {{player}}
+      </li>
+    </ul>
+    <!-- {{data.players}} -->
   </div>
 </div>
